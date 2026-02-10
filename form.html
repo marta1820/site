@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація учня</title>
+</head>
+<body>
+
+<h2>Реєстрація учня</h2>
+
+<form name="Учень" action="send.php" method="post">
+
+    <fieldset>
+        <legend>Дані про учня</legend>
+
+        <label for="name">Ім’я учня:</label>
+        <input type="text" id="name" name="name" placeholder="Введіть ім’я" required>
+        
+
+        <label for="email"> Електронна адреса учня:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        <br><br>
+        <label for="name"> Група в якій навчається учень:</label>
+ <input PLACEHOLDER="Вкажіть номер групи" type="number" id="number" name="number" required>
+ <p>
+    <label for="year">Рік народження:</label><br>
+    <input type="number" id="year" name="year" min="1996" max="2002" required>
+ </p>
+        
+       
+        <label><h3>Виберіть стать:</h3></label>
+        <input type="radio" name="gender" value="male" required> Чоловіча
+        <input type="radio" name="gender" value="female"> Жіноча
+        <br><br>
+        
+         <label for="password">Пароль:</label>
+           <input placeholder="Придумайте пароль" type="password" id="password" name="password" required>
+         <label for="password">Підтвердіть пароль:</label>
+         <input placeholder="Повторіть пароль" type="password" id="password" name="password">
+        <p><lable for="text">Причина реєстрації:</lable>
+        <input placeholder="Тому що" type="text">
+    </p> 
+    </fieldset>
+    <p>З умовами реєстрації ознайомлена(ий) <input type="checkbox"></p> 
+   
+     <p><input type="submit" value="Зареєструватись">
+      <button type="button">
+        <img src="gal.png" alt="Готово"> Готово</button></p>
+
+</form>
+
+</body>
+</html>
